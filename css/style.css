@@ -75,7 +75,7 @@ body{
     gap: 7px;
 }
 
-/* .caret{
+.caret{
     width: 0;
     height: 0;
     border-left: 5px solid transparent;
@@ -104,7 +104,7 @@ body{
     /* transform:translateZ(30%); */
     opacity: 0%;
 }
- */
+
 .active-feature{
     background-color: lightblue;
     transition: all 0.3s linear;
