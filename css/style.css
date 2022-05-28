@@ -7,15 +7,16 @@
     font-family: 'Nunito', sans-serif;
 }
 
-body{
-    background-color: white;
-}
+/* body{
+    background-color: black;
+} */
 
 .whole-container{
     background-color: white;
     display: flex;
     width: 100%;
     height: 100vh;
+    /* margin: 8px 0; */
 }
 
 .dashboard-left{
@@ -24,6 +25,7 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
+    
     /* justify-content: space-between; */
 }
 
@@ -32,7 +34,8 @@ body{
     background-color: wheat;
     width: 78%;
     border-radius: 10px 0 0 10px;
-    margin: 8px 3px;
+    margin: 5px 0;
+    /* min-height: 100%; */
 }
 
 .logo{
@@ -51,10 +54,10 @@ body{
     display: flex;
     flex-direction: column;
     padding: 15px 25px;
-    gap: 20px;
+    gap: 15px;
     position: relative;
     margin-bottom: 20px;
-    bottom: 150px;
+    bottom: 160px;
 }
 
 .dashboard, .boards, .Calender, .events{
@@ -69,6 +72,11 @@ body{
     /* border-radius: 10px;
     background-color: gray; */
 }
+
+.boards{
+    padding: 11px 10px;
+}
+
 .dropdown{
     display: flex;
     flex-direction: column;
@@ -76,31 +84,41 @@ body{
 }
 
 .boards .icond{
-    margin-left: 80px;
-    margin-top: 3px;
-    /* transform: rotate(180deg); */
-}
-.option{
-    margin-top: 30px;
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* margin-top: 3px; */
+    transform: rotate(0deg);
 }
 
-.option ul{
-    background-color: rgb(156, 130, 130);
+.boards-option{
+    display: none;
+}
+
+.boards-option ul{
+    background-color: #EFEAD8;
     border-radius: 10px;
     padding: 5px 2px;
 
 }
 
-.option li{
+.boards-option li{
     text-decoration: none;
     list-style: none;
     padding: 6px 6px;
-    background-color: gray;
+    /* background-color: gray; */
     border-radius: 10px;
     margin: 5px 5px;
+    cursor: pointer;
 }
 
-.caret{
+.boards-option li:hover{
+    background-color: #D0C9C0;
+    color: #21325E;
+}
+
+/* .caret{
     width: 0;
     height: 0;
     border-left: 5px solid transparent;
@@ -124,11 +142,8 @@ body{
     top: 3em;
     left: 50%;
     width: 100%;
-    /* transform: translateX(-50%); */
-    /* transform: translateY(105%); */
-    /* transform:translateZ(30%); */
     opacity: 0%;
-}
+} */
 
 .active-feature{
     background-color: lightblue;
@@ -144,13 +159,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 10px;  */
-    /* position: absolute; */
-    /* bottom: 25px; */
-    /* left: 0; 
+    position: static;
+    bottom: 165px;
+    gap: 10px;
+    left: 0; 
     right: 0; 
     margin-left: auto; 
-    margin-right: auto;  */
+    margin-right: auto;
+    
 }
 
 
