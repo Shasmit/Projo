@@ -75,6 +75,31 @@ body{
     gap: 7px;
 }
 
+.boards .icond{
+    margin-left: 80px;
+    margin-top: 3px;
+    /* transform: rotate(180deg); */
+}
+.option{
+    margin-top: 30px;
+}
+
+.option ul{
+    background-color: rgb(156, 130, 130);
+    border-radius: 10px;
+    padding: 5px 2px;
+
+}
+
+.option li{
+    text-decoration: none;
+    list-style: none;
+    padding: 6px 6px;
+    background-color: gray;
+    border-radius: 10px;
+    margin: 5px 5px;
+}
+
 .caret{
     width: 0;
     height: 0;
@@ -119,13 +144,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px; 
-    position: absolute;
-    bottom: 25px;
-    left: 0; 
+    /* gap: 10px;  */
+    /* position: absolute; */
+    /* bottom: 25px; */
+    /* left: 0; 
     right: 0; 
     margin-left: auto; 
-    margin-right: auto; 
+    margin-right: auto;  */
 }
 
 
