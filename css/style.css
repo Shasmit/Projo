@@ -21,7 +21,7 @@
 
 .dashboard-left{
     background-color: white;
-    width: 22%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -31,12 +31,203 @@
 
 
 .container-right{
-    background-color: wheat;
-    width: 78%;
+    background-color: #63B7AF;
+    width: 80%;
     border-radius: 10px 0 0 10px;
     margin: 5px 0;
     /* min-height: 100%; */
 }
+
+
+.top-container{
+    display: flex;
+    align-items: center;
+    /* gap: 80px; */
+    justify-content: space-between;
+}
+
+.search-bar{
+    border: 1px solid #192e3a;
+    width: 320px;
+    margin: 15px 20px ;
+    border-radius: 10px;
+    padding:10px 10px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.search-bar .iconify{
+    color: #192e3a;
+    text-align: center;
+}
+
+
+#search-text{
+    text-decoration: none;
+    width: 90%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+
+#search-text::placeholder{
+    color: #192e3a;
+}
+
+.create-container{
+    display: flex;
+    align-items: center;
+    margin: 0 30px 0 30px;
+}
+
+.create-board{
+    display: flex;
+    gap: 10px;
+    background-color:  #192e3a;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.create-board .iconify{
+    color: white;
+    background-color: #2D4263;
+    border-radius: 5px;
+    padding: 2px;
+}
+.create-board p{
+    color: white;
+    font-size: 14px;
+}
+
+.notification-icon{
+    background-color: #192e3a;
+    text-align: center;
+    padding: 12px 12px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.notification-icon .iconify{
+    color: white;
+}
+
+.circular{
+    background-color: lightblue;
+    width: 5px;
+    height: 5px;
+    border-radius: 4px;
+    position: absolute;
+    right: 9px;
+    top: 9px;
+}
+
+
+.title-container{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    /* gap: 60px; */
+    justify-content: space-between;
+    margin-right: 20px;
+    
+}
+
+.boards-title{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.title-container p{
+    opacity: 0.5;
+}
+
+.boards-title h1{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.teams-visible{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.visibilty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.visibilty .iconify{
+    color: white;
+}
+
+.lock{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.teams{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.profile-images img{
+    width: 33px;
+    border-radius: 50%;
+    border: 1px solid white;    
+}
+
+.profile-images{
+    display: flex;
+}
+
+.profile-images .iconify{
+    color: #192e3a;
+    position: relative;
+    right: 25px;
+}
+
+
+.profile2{
+    position: relative;
+    right: 10px;
+    
+}
+
+.profile3{
+    position: relative;
+    right: 20px;
+}
+
+
+.profile4{
+    position: relative;
+    right: 30px;
+}
+
+
+.profile5{
+    position: relative;
+    right: 40px;
+}
+
+/* .teams .iconify{
+    color: black;
+} */
+
 
 .logo{
     width: 100%;
@@ -44,10 +235,11 @@
     text-align: center;
     position: relative;
     bottom: 80px;
+    /* background-image: url('/images/logo.svg'); */
 }
 .logo img{
     width: 250px;
-    /* height: 150px; */
+
 }
 
 .features{
@@ -75,6 +267,7 @@
 
 .boards{
     padding: 11px 10px;
+    position: relative;
 }
 
 .dropdown{
@@ -84,12 +277,13 @@
 }
 
 .boards .icond{
-    margin-left: 70px;
     display: flex;
     align-items: center;
     text-align: center;
     /* margin-top: 3px; */
     transform: rotate(0deg);
+    position: absolute;
+    right: 10px;
 }
 
 .boards-option{
@@ -179,3 +373,36 @@
     font-weight: 800;
     font-size: 16px;
 }
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
+/* 
+@media (max-width : 1000px){
+    .feature-text{
+        display: none;
+    }
+    .dashboard-left{
+        width: 10%;
+    }
+    .container-right{
+        width: 90%;
+    }
+    .profile-image .name{
+        display: none;
+    }
+    .logo{
+        bottom: 50px;
+        right: 42px;
+    }
+    .logo img{
+        width: 18vw;
+    }
+    .features{
+        bottom: 100px;
+    }
+} */
