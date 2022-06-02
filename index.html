@@ -9,23 +9,24 @@
         integrity="sha512-lYMiwcB608+RcqJmP93CMe7b4i9G9QK1RbixsNu4PzMRJMsqr/bUrkXUuFzCNsRUo3IXNUr5hz98lINURv5CNA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
     <div class="whole-container">
         <section class="dashboard-left">
             <div class="logo">
-                <img src="/images/logo.svg" alt="Projo_logo">
+                <img class="background-logo" src="/images/logo.svg" alt="Projo_logo">
             </div>
             <div class="features">
                 <div class="dashboard active-feature feature">
                     <span class="iconify" data-icon="icon-park-outline:dashboard-car"></span>
-                    <p>Dashboard</p>
+                    <p class="feature-text">Dashboard</p>
                 </div>
                 <div class="dropdown">
                     <div class="boards feature">
                         <span class="iconify" data-icon="ic:round-space-dashboard"></span>
-                        <p>Boards</p>
+                        <p class="feature-text">Boards</p>
                         <div class="icond dropdown-icon"><span class="iconify" data-icon="gridicons:dropdown" data-width="30" data-height="30"></span></div>
                     </div>
                     <div class="boards-option">
@@ -41,11 +42,11 @@
                 </div>
                 <div class="Calender feature">
                     <span class="iconify" data-icon="uim:calender"></span>
-                    <p>Calender</p>
+                    <p class="feature-text">Calender</p>
                 </div>
                 <div class="events feature">
                     <span class="iconify" data-icon="ic:baseline-event-note"></span>
-                    <p>Events</p>
+                    <p class="feature-text">Events</p>
                 </div>
             </div>
 
@@ -58,6 +59,55 @@
         </section>
 
         <section class="container-right">
+
+            <div class="top-container">
+                <div class="search-bar">
+                    <span class="iconify" data-icon="clarity:search-line" data-width="24" data-height="24"></span>
+                    <input type="search" name="Search" id="search-text" placeholder="Search for anything">
+                </div>
+
+                <div class="create-container">
+                    <div class="create-board">
+                        <span class="iconify" data-icon="akar-icons:plus" data-width="22" data-height="22"></span>
+                        <p>Create New Board</p>
+                    </div>
+                    <div class="notification-icon">
+                        <span class="iconify" data-icon="clarity:notification-line" data-width="20" data-height="20"></span>
+                        <div class="circular">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="title-container">
+                <div class="boards-title">
+                    <p>BOARDS</p>
+                    <h1>SUS Space</h1>
+                </div>
+
+                <div class="teams-visible">
+                    <div class="visibility">
+                    <p>VISIBILITY</p>
+                    <div class="lock">
+                        <span class="iconify" data-icon="eva:lock-outline" data-width="20" data-height="20"></span>
+                        <h3>Private Board</h3>
+                    </div>
+                </div>
+                <div class="teams">
+                    <p>TEAMS</p>
+                    
+                    <div class="profile-images">
+                    <img class="profile1" src="/images/user2.png" alt="sid">
+                    <img class="profile2" src="/images/user3.png" alt="bista">
+                    <img class="profile3" src="/images/user5.png" alt="bista">
+                    <img class="profile4" src="/images/user4.png" alt="sus">
+                    <img class="profile5" src="/images/user5.png" alt="hero">
+                    <span class="iconify" data-icon="bi:plus-circle-dotted" data-width="30" data-height="30"></span>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
 
         </section>
     </div>
