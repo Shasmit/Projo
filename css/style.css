@@ -21,7 +21,7 @@
 
 .dashboard-left{
     background-color: white;
-    width: 20%;
+    width: 18%;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -32,7 +32,7 @@
 
 .container-right{
     background-color: #63B7AF;
-    width: 80%;
+    width: 82%;
     border-radius: 10px 0 0 10px;
     margin: 5px 0;
     /* min-height: 100%; */
@@ -156,7 +156,7 @@
 .teams-visible{
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 60px;
 }
 
 .visibilty{
@@ -177,7 +177,7 @@
 }
 
 .teams{
-    margin-top: 8px;
+    margin-top: 6px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -373,6 +373,71 @@
     font-weight: 800;
     font-size: 16px;
 }
+
+
+.drag-drop{
+    display: flex;
+    overflow: auto;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.drag-drop::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.drag-drop {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.tasks{
+    display: flex;
+    margin: 35px 10px 20px 20px;
+}
+
+
+.task-heading{
+    display: flex;
+    background-color: white;
+    padding: 17px 17px;
+    border-radius:10px;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 250px;
+}
+
+.title p{
+    font-size:20px;
+    font-weight: 700;
+}
+
+.kabab{
+    align-items: center;
+    display: flex;
+    gap: 15px;
+}
+
+.kabab .add{
+    color:#21325E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
 input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
 input[type="search"]::-webkit-search-decoration,
