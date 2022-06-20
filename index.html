@@ -4,15 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title of the site -->
     <title>Projo-Dashboard</title>
+
+    <!-- bootstrap  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"
         integrity="sha512-lYMiwcB608+RcqJmP93CMe7b4i9G9QK1RbixsNu4PzMRJMsqr/bUrkXUuFzCNsRUo3IXNUr5hz98lINURv5CNA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- link style css -->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
+
+    <div class="overlay">
+        <div class="second-container">
+            <div class="header">
+              <div class="overlay-title">Add Todo</div>
+              <button class="btn close-container">&times;</button>
+            </div>
+            <div class="body">
+              <input type="text" id="todo_input" placeholder="Title..." />
+              <input type="text" id="todo_input" placeholder="Description..." />
+              <input type="date" id="todo_input date-time" />
+              <button id="todo_submit">Add To-do</button>
+            </div>
+          </div>
+    </div>
+
     <div class="whole-container">
         <section class="dashboard-left">
             <div class="logo">
@@ -93,9 +115,9 @@
                         <h3>Private Board</h3>
                     </div>
                 </div>
+
                 <div class="teams">
                     <p>TEAMS</p>
-                    
                     <div class="profile-images">
                     <img class="profile1" src="/images/user2.png" alt="sid">
                     <img class="profile2" src="/images/user3.png" alt="bista">
@@ -117,7 +139,8 @@
                         </div>
                        <div class="kabab">
                         <span class="iconify" data-icon="charm:menu-kebab" data-rotate="270deg"></span>
-                        <span class="iconify add" data-icon="akar-icons:circle-plus-fill" data-width="24" data-height="24"></span> 
+                        <span class="iconify add" data-icon="akar-icons:circle-plus-fill" data-width="24" data-height="24" data-target="#todo_form"></span>
+
                        </div>     
                     </div>
 
@@ -277,5 +300,6 @@
     </div>
 
     <script src="/javascript/button.js"></script>
+    <script src="/javascript/drag-drop.js"></script>
 </body>
 </html>
