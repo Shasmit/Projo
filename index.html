@@ -8,6 +8,8 @@
     <!-- title of the site -->
     <title>Projo-Dashboard</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
     <!-- bootstrap  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"
         integrity="sha512-lYMiwcB608+RcqJmP93CMe7b4i9G9QK1RbixsNu4PzMRJMsqr/bUrkXUuFzCNsRUo3IXNUr5hz98lINURv5CNA=="
@@ -20,6 +22,7 @@
 
 <body>
 
+    <!-- overlay div -->
     <div class="overlay">
         <div class="second-container">
             <div class="header">
@@ -28,13 +31,14 @@
             </div>
             <div class="body">
               <input type="text" id="todo_input" placeholder="Title..." />
-              <input type="text" id="todo_input" placeholder="Description..." />
-              <input type="date" id="todo_input date-time" />
-              <button id="todo_submit">Add To-do</button>
+              <input type="text" id="todo_input1" placeholder="Description..." />
+              <input type="date" id="todo_input2 date-time" />
+              <button class="todo_submit" id="todo_submit">Add To-do</button>
             </div>
           </div>
     </div>
 
+    <!-- whole container div -->
     <div class="whole-container">
         <section class="dashboard-left">
             <div class="logo">
@@ -124,7 +128,7 @@
                     <img class="profile3" src="/images/user5.png" alt="bista">
                     <img class="profile4" src="/images/user4.png" alt="sus">
                     <img class="profile5" src="/images/user5.png" alt="hero">
-                    <span class="iconify" data-icon="bi:plus-circle-dotted" data-width="30" data-height="30"></span>
+                    <span class="iconify" data-icon=add-tod"bi:plus-circle-dotted" data-width="30" data-height="30"></span>
                     </div>
                 </div>
                 </div>
@@ -139,8 +143,7 @@
                         </div>
                        <div class="kabab">
                         <span class="iconify" data-icon="charm:menu-kebab" data-rotate="270deg"></span>
-                        <span class="iconify add" data-icon="akar-icons:circle-plus-fill" data-width="24" data-height="24" data-target="#todo_form"></span>
-
+                        <i class="fa-solid fa-circle-plus add-todos"></i>
                        </div>     
                     </div>
 
@@ -206,7 +209,7 @@
                         </div>
                        <div class="kabab">
                         <span class="iconify" data-icon="charm:menu-kebab" data-rotate="270deg"></span>
-                        <span class="iconify add" data-icon="akar-icons:circle-plus-fill" data-width="24" data-height="24"></span> 
+                        <i class="fa-solid fa-circle-plus add-todos"></i>
                        </div>
                                
                     </div>
@@ -237,7 +240,38 @@
                         </div>
                        <div class="kabab">
                         <span class="iconify" data-icon="charm:menu-kebab" data-rotate="270deg"></span>
-                        <span class="iconify add" data-icon="akar-icons:circle-plus-fill" data-width="24" data-height="24"></span> 
+<i class="fa-solid fa-circle-plus add-todos"></i>
+                       </div>       
+                    </div>
+
+                    <!-- <div class="backlog-content">
+                        
+                    </div> -->
+                </div>
+
+                <div class="to-do tasks">
+                    <div class="task-heading">
+                        <div class="title">
+                            <p>To Do</p>
+                        </div>
+                       <div class="kabab">
+                        <span class="iconify" data-icon="charm:menu-kebab" data-rotate="270deg"></span>
+<i class="fa-solid fa-circle-plus add-todos"></i>                       </div>       
+                    </div>
+
+                    <!-- <div class="backlog-content">
+                        
+                    </div> -->
+                </div>
+
+                <div class="to-do tasks">
+                    <div class="task-heading">
+                        <div class="title">
+                            <p>To Do</p>
+                        </div>
+                       <div class="kabab">
+                        <span class="iconify" data-icon="charm:menu-kebab" data-rotate="270deg"></span>
+<i class="fa-solid fa-circle-plus add-todos"></i>
                        </div>       
                     </div>
 
@@ -246,50 +280,6 @@
                     </div> -->
                 </div>
                 
-                <div class="to-do tasks">
-                    <div class="task-heading">
-                        <div class="title">
-                            <p>To Do</p>
-                        </div>
-                       <div class="kabab">
-                        <span class="iconify" data-icon="charm:menu-kebab" data-rotate="270deg"></span>
-                        <span class="iconify add" data-icon="akar-icons:circle-plus-fill" data-width="24" data-height="24"></span> 
-                       </div>     
-                    </div>
-
-                    <!-- <div class="backlog-content">
-                    </div> -->
-                </div>
-
-                <div class="to-do tasks">
-                    <div class="task-heading">
-                        <div class="title">
-                            <p>To Do</p>
-                        </div>
-                       <div class="kabab">
-                        <span class="iconify" data-icon="charm:menu-kebab" data-rotate="270deg"></span>
-                        <span class="iconify add" data-icon="akar-icons:circle-plus-fill" data-width="24" data-height="24"></span> 
-                       </div>     
-                    </div>
-<!-- 
-                    <div class="backlog-content">
-                    </div> -->
-                </div>
-
-                <div class="to-do tasks">
-                    <div class="task-heading">
-                        <div class="title">
-                            <p>To Do</p>
-                        </div>
-                       <div class="kabab">
-                        <span class="iconify" data-icon="charm:menu-kebab" data-rotate="270deg"></span>
-                        <span class="iconify add" data-icon="akar-icons:circle-plus-fill" data-width="24" data-height="24"></span> 
-                       </div>     
-                    </div>
-
-                    <!-- <div class="backlog-content">
-                    </div> -->
-                </div>
                 
 
 
