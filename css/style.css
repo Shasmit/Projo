@@ -479,10 +479,13 @@
     gap: 15px;
 }
 
-.kabab .add{
-    color:#21325E;
-}
+/* .kabab .add-todo{
+    background-color: blue;
+} */
 
+.add-todos{
+    font-size: 23px;
+}
 
 /* overlay-css */
 
@@ -495,7 +498,7 @@
 
 .second-container{
     width: 370px;
-    background-color: lightblue;
+    background-color:#192e3a;
     border-radius: 10px;
     min-height: 180px;
     position: absolute;
@@ -509,6 +512,7 @@
     padding: 10px 15px 6px 15px;
     align-items: center;
     font-family: 'Nunito', sans-serif;
+    color: white;
 }
 
 .header .btn{
@@ -517,7 +521,7 @@
     background-color: transparent;
     cursor: pointer;
     font-size: 20px;
-    color: black;
+    color: white;
 }
 
 .header .overlay-title{
@@ -534,24 +538,27 @@
 
 .body input{
     border-radius: 4px;
-    height: 25px;
+    height: 32px;
     border: 1px solid gray;
     padding: 5px 10px;
 }
 
-#todo_submit {
+.todo_submit {
     border: none;
-    padding: 13px;
+    padding: 12px;
     border-radius: 10px;
-    background-color:darkgrey;
+    background-color:#2D4263;
+    color: white;
     cursor: pointer;
     font-weight: 600;
     font-family: 'Nunito', sans-serif;
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
-
-
+.todo_submit:hover{
+    background-color:#21325E;
+}
 
 input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
 input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
