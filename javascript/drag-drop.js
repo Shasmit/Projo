@@ -67,6 +67,40 @@ clickOverlay.forEach((clicks) => {
 closeOverlay.addEventListener('click', () => {
     console.log('bye');
     showOverlay.style.display = "none";
+    document.getElementById('todo_input').value = '';
+    document.getElementById('todo_input1').value = '';
+    document.getElementById('todo_input2').value = '';
 }
 )
+
+
+
+
+// for create boards overlay
+const showboardsOverlay = document.querySelector('.create-board-overlay');
+const clickboardsOverlay = document.querySelectorAll('.create-board');
+const closeboardsOverlay = document.querySelector('.close-boards-container')
+
+
+console.log(clickboardsOverlay);
+
+clickboardsOverlay.forEach((clickss) => {
+    clickss.addEventListener('click', () => {
+        console.log('hi');
+        if(showboardsOverlay.style.display == "none"){
+            showboardsOverlay.style.display = "block";
+        }
+        else{
+            showboardsOverlay.style.display = "none";
+        }
+    })
+})
+
+closeboardsOverlay.addEventListener('click', () => {
+    console.log('bye');
+    showboardsOverlay.style.display = "none";
+    document.getElementById('board_input').value = '';
+}
+)
+
 
