@@ -38,6 +38,44 @@
           </div>
     </div>
 
+    <!-- create board overlay div -->
+    <div class="create-board-overlay">
+        <div class="create-board-container">
+            <div class="boards-overlay-header">
+              <div class="overlay-title">Create New Board</div>
+              <button class="btn close-boards-container">&times;</button>
+            </div>
+            <div class="bodys">
+            <p class="headings">Add Title</p>
+            <input type="text" id="board_input" placeholder="Title..." />
+            
+            <p class="headings1">Type of Board</p>
+            <div class="radiobutton">
+                <div class="radiobuttons">
+                    <input type="radio" name="board_type" id="individual" value="Individual">
+                    <p>Private Board</p>
+                </div>
+                <div class="radiobuttons">
+                    <input type="radio" name="board_type" id="group" value="Group">
+                    <p>Public Board</p>
+                </div>
+            </div>
+
+            <p class="headings1">Add Members</p>
+            <div class="add-memberss">
+                <img class="profile1" src="/images/user2.png" alt="sid">
+                <img class="add-profiles" src="/images/user4.png" alt="sid">
+                
+
+                <span class="iconify circlee" data-icon="bi:plus-circle-dotted" data-width="30" data-height="30"></span>
+               </div>
+            
+              <button class="board_submit" id="board_submit">Create Board</button>
+            </div>
+          </div>
+    </div>
+    
+
     <!-- whole container div -->
     <div class="whole-container">
         <section class="dashboard-left">
@@ -94,7 +132,7 @@
 
                 <div class="create-container">
                     <div class="create-board">
-                        <span class="iconify" data-icon="akar-icons:plus" data-width="22" data-height="22"></span>
+                        <span class="iconify board-creator" data-icon="akar-icons:plus" data-width="22" data-height="22"></span>
                         <p>Create New Board</p>
                     </div>
                     <div class="notification-icon">
