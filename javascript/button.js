@@ -18,7 +18,6 @@ const boardsOption = document.querySelector('.boards-option');
 const profileImage = document.querySelector('.profile-image');
 const dropdownIcon = document.querySelector('.icond');
 
-  
   dropdownbaords.addEventListener('click', () => {
     console.log("hi");
     if (boardsOption.style.display == 'none') {
@@ -34,6 +33,31 @@ const dropdownIcon = document.querySelector('.icond');
     else{
       profileImage.style.position = 'static';
     }
-    
   }
   )
+
+
+//for notification panel
+
+const clickNotiIcon = document.querySelector('.notification-icon');
+const showNotification = document.querySelector('.notification-panel');
+const closeNotification = document.querySelector('.close-notification');
+
+closeNotification.addEventListener('click', () => {
+  showNotification.style.display = 'none';
+})
+
+
+clickNotiIcon.addEventListener('click', () => {
+
+  if(showNotification.style.display == 'none'){
+    showNotification.style.display = 'block';
+    console.log('hi');
+  }
+  else{
+    showNotification.style.display = 'none';
+    console.log('bye');
+  }
+
+}
+)
