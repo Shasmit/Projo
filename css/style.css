@@ -156,7 +156,7 @@
     overflow: hidden;
 }
 
-.notification-panel hr{
+.whole-notification hr{
     background-color: #192e3a;
     height: 3px;
     width: 350px;
@@ -198,7 +198,7 @@
 
 .notification-panel::-webkit-scrollbar-thumb {
     border-radius:25px;
-    background-color: #192e3a;
+    background-color: #43655A;
     /* background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%); */
     box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
   }
@@ -401,13 +401,13 @@
     border-radius: 10px;
     margin: 5px 5px;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .boards-option li:hover{
     background-color: #D0C9C0;
     color: #21325E;
 }
-
 
 .active-feature{
     background-color: lightblue;
@@ -709,6 +709,108 @@
 }
 
 
+/* todo-task overlay */
+.task-overlay{
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+
+.task-content{
+    background-color: white;
+    width: 370px;
+    border-radius: 10px;
+    height: auto;
+    position: absolute;
+    top: 28%;
+    left: 37%;
+    overflow: hidden;
+    padding: 5px 20px;
+}
+
+.task-content .btn{
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 25px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.task-content h3{
+    font-weight: 700;
+    padding: 10px 5px 5px 5px;
+    cursor: pointer;
+}
+
+.task-title h3{
+    padding: 5px;
+}
+.task-title textarea{
+    resize: none;
+    border: 1px solid #192e3a;;
+    color: black;
+    font-size: 16px;
+    overflow: hidden;
+    max-width: 300px;
+    border-radius: 5px;
+    padding: 5px 10px 5px 5px;
+}
+
+.task-description h3{
+    padding: 10px 5px 5px 5px;
+
+}
+.task-description textarea{
+    resize: none;
+    border: 1px solid #192e3a;;
+    color: black;
+    font-size: 14px;
+    overflow: hidden;
+    max-width: 300px;
+    border-radius: 5px;
+    padding: 5px 10px 5px 5px;
+}
+
+
+.add-members{
+    padding: 5px;
+}
+.add-membersss img{
+    width: 33px;
+    border-radius: 50%;
+    border: 1px solid white;  
+    cursor: pointer;  
+}
+
+.add-membersss .iconify{
+    color: #192e3a;
+    cursor: pointer;
+}
+
+.save-btn {
+    border-radius: 12px;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    background: #2D4263;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .save-btn:hover {
+    background: #21325E;
+    text-decoration: none;
+  }
+
+
 /* overlay-css */
 
 .overlay{
@@ -795,28 +897,48 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 
-/* 
+
 @media (max-width : 1000px){
     .feature-text{
         display: none;
     }
     .dashboard-left{
-        width: 10%;
+        width: 15%;
     }
     .container-right{
-        width: 90%;
+        width: 85%;
     }
+    
+    .profile-image{
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto;
+    }
+
     .profile-image .name{
         display: none;
     }
     .logo{
-        bottom: 50px;
-        right: 42px;
+        bottom: 30px;
+        right: 23px;
     }
     .logo img{
-        width: 18vw;
+        width: 22vw;
     }
     .features{
-        bottom: 100px;
+        bottom: 70px;
     }
-} */
+
+    .icond .iconify{
+        display: none;
+    }
+
+    .active-feature{
+        background-color: lightblue;
+        transition: all 0.3s linear;
+        width: 40px;
+        height: 40px;
+    }
+
+}
