@@ -62,3 +62,26 @@ clickNotiIcon.addEventListener('click', () => {
 }
 )
 
+
+//for todo-click description
+const clickTodoTask = document.querySelectorAll('.backlog-content');
+const showTodoTask = document.querySelector('.task-overlay');
+const closeTodoTask = document.querySelector('.close-todotask');
+
+clickTodoTask.forEach((onclicks) => {
+    onclicks.addEventListener('click', () => {
+      console.log("hoja bhai");
+      if(showTodoTask.style.display == "none"){
+        showTodoTask.style.display = "block";
+      }
+      else{
+        showTodoTask.style.display = "none";
+      }
+    })
+})
+
+closeTodoTask.addEventListener('click', () => {
+  showTodoTask.style.display = 'none';
+})
+
+
